@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link rel="stylesheet" href="contact.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">Contact</div>
+    <ul class="navlinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about_me.html">About Me</a></li>
+      <li><a href="portofolio.html">Portofolio</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section">
+    <h1>Hubungi Saya</h1>
+    <p>Silakan isi formulir di bawah ini untuk menghubungi saya:</p>
+    
+    <form class="contact-form" action="https://formsubmit.co/badveinton@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="thanks.html">
+
+  <input type="text" name="name" placeholder="Nama Anda" required>
+  <input type="email" name="email" placeholder="Email Anda" required>
+  <textarea name="message" placeholder="Pesan Anda" required></textarea>
+  <button type="submit">Kirim Pesan</button>
+      <p class="form-note">Saya akan membalas pesan Anda secepatnya.</p>
+    </form>
+
+    <div class="socials">
+      <p>Atau hubungi saya melalui:</p>
+      <a href="#"><i class="fab fa-whatsapp"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+  </section>
+</body>
+</html>
