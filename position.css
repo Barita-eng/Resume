@@ -11,7 +11,7 @@ body{
     font-family:sans-serif;
     background-color: #eee;
     color: #181818;
-    overflow: scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 .main-header{
