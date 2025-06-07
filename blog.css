@@ -3,6 +3,8 @@ body {
   font-family: 'Segoe UI', sans-serif;
   background-color: #1a1a1a;
   color: #fff;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 nav {
