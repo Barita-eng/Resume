@@ -1,24 +1,17 @@
-* {
 html, body {
   width: 100%;
   overflow-x: hidden;
-  overflow-x: none;
-}
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
-}
-
-body {
   font-family: sans-serif;
   background-color: #eee;
   color: #181818;
-  overflow-x: none;
-  overflow-x: hidden;
-  outline: 2px solid red;
 }
-
+*{
+  box-sizing: inherit;
+  text-decoration: none;
+}
 .main-header {
   width: 100%;
   min-height: 100%;
