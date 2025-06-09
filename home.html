@@ -93,34 +93,40 @@
     </div>
   </section>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-  <script>
-    var togglebtn = document.querySelector(".togglebtn");
-    var nav = document.querySelector(".navlinks");
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+<script>
+  var togglebtn = document.querySelector(".togglebtn");
+  var nav = document.querySelector(".navlinks");
 
-    togglebtn.addEventListener("click", function () {
-      this.classList.toggle("click");
-      nav.classList.toggle("open");
-    });
+  // Toggle open/close menu
+  togglebtn.addEventListener("click", function () {
+    this.classList.toggle("click");
+    nav.classList.toggle("open");
+  });
 
-    var typed = new Typed(".input", {
-      strings: ["Frontend Developer", " UX Designer", " Web Developer", " Planning Assistant"],
-      typeSpeed: 70,
-      backSpeed: 55,
-      loop: true
-    });
-    
-    var navLinks = document.querySelectorAll(".navlinks li a");
+  // Typed.js typing effect
+  var typed = new Typed(".input", {
+    strings: ["Frontend Developer", " UX Designer", " Web Developer", " Planning Assistant"],
+    typeSpeed: 70,
+    backSpeed: 55,
+    loop: true
+  });
+
+  // Tutup menu ketika link di navbar diklik
+  var navLinks = document.querySelectorAll(".navlinks li a");
   navLinks.forEach(function (link) {
     link.addEventListener("click", function () {
       togglebtn.classList.remove("click");
       nav.classList.remove("open");
     });
-    
-    window.addEventListener("resize", function () {
-  togglebtn.classList.remove("click");
-  nav.classList.remove("open");
+  });
+
+  // Tutup menu ketika layar di-resize
+  window.addEventListener("resize", function () {
+    togglebtn.classList.remove("click");
+    nav.classList.remove("open");
   });
 </script>
+
 </body>
 </html>
