@@ -255,10 +255,68 @@ nav .navlinks li a:hover{
         padding: 30px 0px;
     }
 }
+.container2{
+    width: 100%;
+    height: 100%;
+    min-height: 20vh;
+    background: rgb(192, 192, 192);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 img{
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.container2 .logo2{
+    width: 420px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color:rgb(192, 192, 192);
+    justify-items: center;
+}
+.container2 .logo2 ul{
+    display: block;
+    padding: 5px;
+    justify-items: center;
+}
+.container2 .logo2 ul li{
+    color: azure;
+}
+.container2 .colom1{
+    width: 420px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgb(192, 192, 192);
+    justify-items: center;
+}
+.container2 .colom1 ul{
+    justify-items: center;
+    display: block;
+    padding: 5px;
+}
+.container2 .colom2{
+    width: 420px;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color:  rgb(192, 192, 192);
+    justify-items: center;
+}
+.container2 .colom2 ul{
+    display: block;
+    padding: 5px;
+    Justify-items: center;
+}
 .container2 {
     display: flex;
     justify-content: space-around;
-    background: #dfe2e2;
+    background: rgb(192, 192, 192);
     padding: 20px;
 }
 
@@ -273,6 +331,6 @@ nav .navlinks li a:hover{
 }
 
 .logo2 h4, .colom1 h4, .colom2 h4 {
-    color: #680000;
+    color: #ffffff;
     margin-bottom: 10px;
 }
