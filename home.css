@@ -9,7 +9,7 @@ body {
   font-family: sans-serif;
   background-color: #eee;
   color: #181818;
-  overflow-x: hidden;
+  overflow: none;
 }
 
 .main-header {
@@ -251,7 +251,7 @@ nav .navlinks li a:hover {
     right: -100%;
     width: 60%;
     height: 100vh;
-    background-color: #242424;
+    background-color: #d6d6d6;
     z-index: 3;
     box-shadow: 5px 13px 30px #fff;
     transition: 0.5s;
