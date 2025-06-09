@@ -1,112 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="position.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
-</head>
-<body>
-    <div class="main-header">
-        <div class="warpper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-b"></i>
-                    <div class="logo-text"><abbr title="Barita Adveinton Sitorus">B. A. S.</abbr></div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="index.html">HOME</a></li>
-                        <li><a href="portofolio.html">PORTOFOLIO</a></li>
-                        <li><a href="resume.html">RESUME</a></li>
-                        <li><a href="about_me.html">ABOUT ME</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="contact.html">CONTACT</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                <div class="hero-pic">
-                    <img src="e.png" alt="Photo">
-                </div>
-                <div class="hero-text">
-                    <h5>Hi! I'm BAS <span class="input"> Frontend Developer</span></h5>
-                    <h1>Barita Adveinton Sitorus</h1>
-                    <p>Menguasai berbagai software perencanaan seperti QGIS, ArcGIS, dan CAD, serta memiliki kemampuan dalam analisis tata ruang dan perencanaan transportasi...</p>
-                    <div class="btn-group">
-                        <a href="Barita Adveinton Sitorus Resume.pdf" class="btn active">Download CV</a>
-                        <a href="contact.html" class="btn">Contact</a>
-                    </div>
-                    <div class="social">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="Building">
-                <img src="11.png" alt="pic Here" height="30px">
-                <img src="11.png" alt="pic Here" height="30px"> 
-                <img src="11.png" alt="pic Here" height="30px"> 
-                <img src="11.png" alt="pic Here" height="30px"> 
-                <img src="11.png" alt="pic Here" height="30px"> 
-            </div>
-        </div>
-    </div>
+/* Global Styles */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+  line-height: 1.6;
+}
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
-    <script>
-        var togglebtn = document.querySelector(".togglebtn");
-        var nav = document.querySelector(".navlinks");
+header {
+  background-color: #0d1b2a;
+  color: #fff;
+  padding: 2rem 1rem;
+  text-align: center;
+}
 
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        });
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
 
-        var typed = new Typed(".input", {
-            strings: ["Frontend Developer", " UX Designer", " Web Developer", " Planning Assistant"],
-            typeSpeed: 70,
-            backSpeed: 55,
-            loop: true
-        });
-    </script>
+header p {
+  margin: 0.5rem 0 0;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
 
-    <div class="container2">
-        <img src="c.png" alt="Pic Here">
-        <div class="logo2">
-            <h4 class="COMMUNITY">COMMUNITY</h4>
-            <ul type="none" class="cc1">
-                <li><a href="#">UKSU-ITB</a></li>
-                <li><a href="#">Musik Tiup HKBP Doloksanggul</a></li>
-                <li><a href="#">HMP-PL ITB</a></li>
-            </ul>
-        </div>
-        <div class="colom1">
-            <h4 class="ARTS">ARTS</h4>
-            <ul type="none" class="cc2">
-                <li><a href="#">Drawing</a></li>
-                <li><a href="#">Music</a></li>
-                <li><a href="#">Video</a></li>
-                <li><a href="#">3D Modeling</a></li>
-            </ul>
-        </div>
-        <div class="colom2">
-            <h4 class="STORES">STORES</h4>
-            <ul type="none" class="cc3">
-                <li><a href="#">Shopee</a></li>
-                <li><a href="#">Lazada</a></li>
-                <li><a href="#">Tokopedia</a></li>
-            </ul>
-        </div>
-    </div>
-</body>
-</html>
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+}
+
+/* Section Styles */
+section {
+  margin-bottom: 2rem;
+}
+
+h2 {
+  border-left: 4px solid #0077b6;
+  padding-left: 10px;
+  color: #023e8a;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding-left: 1.2rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+}
+
+/* Highlighted Info */
+strong {
+  color: #03045e;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    padding: 1rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
