@@ -227,9 +227,9 @@ nav .navlinks li a:hover{
         bottom: 0;
         width: 60%;
         height: 100vh;
-        background-color:rgb(57, 77, 83);
+        background-color:rgb(36, 36, 36);
         z-index: 3;
-        box-shadow: 5px 13px 30px rgb(57, 77, 83);
+        box-shadow: 5px 13px 30px rgb(255, 255, 255);
         transition: 0.5s;
         padding: 25px 0px;
     }
