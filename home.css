@@ -88,7 +88,7 @@ nav .togglebtn span {
 nav .navlinks {
   list-style-type: none;
   background-color: #c3c5c4;
-  margin: 5px;
+  margin: 0;
   padding: 10px;
 }
 
@@ -244,16 +244,17 @@ nav .navlinks li a:hover {
   }
 
   nav .navlinks {
-    position: absolute;
-    top: 110px;
-    right: -100%;
-    width: 60%;
-    height: 100vh;
-    background-color: #d6d6d6;
-    z-index: 3;
-    box-shadow: 5px 13px 30px #fff;
-    transition: 0.5s;
-    padding: 25px 0;
+  position: absolute;
+  top: 110px;
+  right: -100vw; /* Ganti dari -100% ke -100vw agar tidak trigger scroll */
+  width: 60vw;
+  height: 100vh;
+  background-color: #d6d6d6;
+  z-index: 3;
+  box-shadow: 5px 13px 30px #fff;
+  transition: right 0.5s ease;
+  padding: 25px 0;
+  overflow-y: auto;
   }
 
   nav .navlinks.open {
