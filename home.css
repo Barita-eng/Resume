@@ -88,7 +88,7 @@ nav .togglebtn span {
 nav .navlinks {
   list-style-type: none;
   background-color: #c3c5c4;
-  margin: 5px;
+  margin: 0px;
   padding: 10px;
 }
 
@@ -244,7 +244,6 @@ nav .navlinks li a:hover {
   }
 
   nav .navlinks {
-    position: absolute;
     top: 110px;
     right: -100%;
     width: 60%;
