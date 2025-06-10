@@ -244,7 +244,7 @@ nav .navlinks li a:hover {
   }
 
   nav .navlinks {
-    position: relative;
+    position: absolute;
     top: 110px;
     right: -100%;
     width: 60%;
