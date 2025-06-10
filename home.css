@@ -1,3 +1,13 @@
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #eee;
+  color: #181818;
+}
 *{
   box-sizing: inherit;
   text-decoration: none;
@@ -314,10 +324,4 @@ nav .navlinks li a:hover {
 html, body {
   width: 100%;
   overflow-x: hidden !important;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background-color: #eee;
-  color: #181818;
 }
