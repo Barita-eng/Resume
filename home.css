@@ -90,6 +90,9 @@ nav .navlinks {
   background-color: #c3c5c4;
   margin: 0;
   padding: 10px;
+  transform: translateX(100%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 nav .navlinks li {
@@ -246,19 +249,23 @@ nav .navlinks li a:hover {
   nav .navlinks {
   position: absolute;
   top: 110px;
-  right: -100vw; /* Ganti dari -100% ke -100vw agar tidak trigger scroll */
+  right: 0;
   width: 60vw;
   height: 100vh;
   background-color: #d6d6d6;
   z-index: 3;
   box-shadow: 5px 13px 30px #fff;
-  transition: right 0.5s ease;
+  transition: transform 0.5s ease, opacity 0.3s ease;
+  transform: translateX(100%);   /* ⬅️ geser ke luar layar */
+  opacity: 0;                    /* ⬅️ sembunyikan secara visual */
+  pointer-events: none;          /* ⬅️ tidak bisa diklik saat disembunyikan */
   padding: 25px 0;
-  overflow-y: auto;
   }
 
   nav .navlinks.open {
-    right: 0;
+  transform: translateX(0);    /* ⬅️ geser masuk ke kanan */
+  opacity: 1;                  /* ⬅️ tampilkan */
+  pointer-events: auto;       /* ⬅️ bisa diklik */
   }
 
   nav .navlinks li {
