@@ -1,13 +1,3 @@
-html, body {
-  width: 100%;
-  overflow-x: hidden !important;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  background-color: #eee;
-  color: #181818;
-}
 *{
   box-sizing: inherit;
   text-decoration: none;
@@ -88,7 +78,6 @@ nav .togglebtn span {
 nav .navlinks {
   list-style-type: none;
   background-color: #c3c5c4;
-  margin: 5px;
   padding: 10px;
 }
 
@@ -321,4 +310,14 @@ nav .navlinks li a:hover {
 .container2 h4 {
   color: #fff;
   margin-bottom: 10px;
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  background-color: #eee;
+  color: #181818;
 }
