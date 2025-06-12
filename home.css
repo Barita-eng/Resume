@@ -1,23 +1,20 @@
-/* RESET & Global Setup */
-html, body {
-  width: 100%;
-  overflow-x: hidden;
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-  background-color: #eee;
-  color: #181818;
-}
-* {
-  box-sizing: inherit;
   text-decoration: none;
 }
 
-/* Header & Layout */
+body {
+  font-family: sans-serif;
+  background-color: #eee;
+  color: #181818;
+  overflow-x: hidden;
+}
+
 .main-header {
   width: 100%;
-  min-height: 100%;
+  min-height: 100vh;
   background: #eee;
 }
 
@@ -40,6 +37,7 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .logo i {
   height: 50px;
   width: 50px;
@@ -52,30 +50,33 @@ header {
   text-align: center;
   cursor: pointer;
 }
+
 .logo i:hover {
   background-color: #a7a8a8;
   color: #d60303;
 }
+
 .logo .logo-text {
   font-size: 24px;
   font-weight: bold;
   color: black;
 }
+
 .logo .logo-text:hover {
   color: #ec0404;
 }
 
-/* Navbar */
 nav .togglebtn {
   width: 35px;
   height: 35px;
+  position: absolute;
   top: 45px;
   right: 3%;
   z-index: 5;
   cursor: pointer;
   display: none;
-  position: absolute;
 }
+
 nav .togglebtn span {
   display: block;
   background-color: black;
@@ -85,42 +86,27 @@ nav .togglebtn span {
   transition: 0.3s;
 }
 
-/* Sidebar Menu */
 nav .navlinks {
-  position: absolute;
-  top: 110px;
-  right: 0;
-  width: 60vw;
-  height: 100vh;
-  background-color: #d6d6d6;
-  z-index: 3;
-  box-shadow: 5px 13px 30px #fff;
-  transition: transform 0.5s ease, opacity 0.3s ease;
-  transform: translateX(100%);     /* ✅ awalnya disembunyikan */
-  opacity: 0;
-  pointer-events: none;
-  padding: 25px 0;
+  list-style-type: none;
+  background-color: #c3c5c4;
+  margin: 5px;
+  padding: 10px;
 }
-nav .navlinks.open {
-  transform: translateX(0);        /* ✅ tampil saat garis tiga diklik */
-  opacity: 1;
-  pointer-events: auto;
-}
+
 nav .navlinks li {
-  display: block;
+  display: inline-block;
 }
+
 nav .navlinks li a {
-  display: block;
-  margin-bottom: 15px;
-  text-align: center;
   color: black;
+  margin: 2rem;
   font-size: 14px;
 }
+
 nav .navlinks li a:hover {
   color: #f10505;
 }
 
-/* Hero Section */
 .container {
   display: flex;
   justify-content: space-around;
@@ -128,6 +114,7 @@ nav .navlinks li a:hover {
   padding-top: 4rem;
   gap: 2rem;
 }
+
 .container .hero-pic {
   max-width: 300px;
   height: 300px;
@@ -136,69 +123,89 @@ nav .navlinks li a:hover {
   border: 15px solid #dfe2e2;
   box-shadow: 5px 7px 25px #000;
 }
+
 .hero-pic img {
   height: 100%;
   width: 100%;
   object-fit: cover;
   transition: 0.5s;
 }
+
 .hero-pic img:hover {
   transform: scale(1.1);
 }
+
 .hero-text {
   max-width: 650px;
   display: flex;
   flex-direction: column;
 }
+
 .hero-text h5 {
   color: #680000;
   font-size: 14px;
 }
+
 .hero-text h5 span {
   color: #bb0202;
   font-size: 16px;
 }
+
 .hero-text h1 {
   color: #f10c0c;
   font-size: 3rem;
 }
+
 .hero-text p {
   color: black;
   font-size: 13.5px;
   text-align: justify;
 }
+
 .btn-group {
   margin: 45px 0;
 }
+
 .btn-group .btn {
   border: 2px solid #fff;
   color: black;
-  background-color: #d6d6d6;
+  background-color: #eee;
   padding: 12px 25px;
   margin-right: 7px;
   border-radius: 30px;
   box-shadow: 0 10px 10px -8px rgba(221, 221, 221, 0.78);
   transition: 0.5s;
 }
+
 .btn.active {
   border-color: #fb9393;
   font-weight: bold;
 }
+
 .btn-group .btn:hover {
   background-color: #ffb0b0;
 }
+
 .hero-text .social i {
   color: #ef6e6e;
   font-size: 18px;
   margin-right: 10px;
   transition: 0.5s;
 }
+
 .hero-text .social i:hover {
   color: #fc1e0a;
   transform: rotate(360deg);
 }
 
-/* Building Image */
+.wrapper .building {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 100px;
+  gap: 10px;
+}
 .building {
   width: 100%;
   height: auto;
@@ -215,40 +222,69 @@ nav .navlinks li a:hover {
   margin: 0;
   padding: 0;
 }
-
-/* Responsive Sidebar Burger */
 @media (max-width: 930px) {
   nav .togglebtn {
     display: block;
   }
 
   .click span {
+    position: absolute;
     margin-top: 12px;
   }
+
   .click span:first-child {
     transform: rotate(-40deg);
   }
+
   .click span:nth-child(2) {
     opacity: 0;
   }
+
   .click span:last-child {
     transform: rotate(45deg);
     top: 0;
   }
+
+  nav .navlinks {
+    position: absolute;
+    top: 110px;
+    right: -100%;
+    width: 60%;
+    height: 100vh;
+    background-color: #d6d6d6;
+    z-index: 3;
+    box-shadow: 5px 13px 30px #fff;
+    transition: 0.5s;
+    padding: 25px 0;
+    color: #fff;
+  }
+
+  nav .navlinks.open {
+    right: 0;
+  }
+
+  nav .navlinks li {
+    display: block;
+  }
+
+  nav .navlinks li a {
+    display: block;
+    margin-bottom: 15px;
+    text-align: center;
+  }
 }
 
-/* Mobile Responsiveness */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
     padding-top: 2rem;
   }
+
   .hero-text {
     padding: 30px 0;
   }
 }
 
-/* Container2 (Footer/Community Section) */
 .container2 {
   width: 100%;
   min-height: 20vh;
@@ -257,7 +293,7 @@ nav .navlinks li a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: -5px;
+  margin-top: -5px; /* Tambahan */
 }
 .container2 img {
   height: 80px;
@@ -265,6 +301,7 @@ nav .navlinks li a:hover {
   margin: 0 20px;
   cursor: pointer;
 }
+
 .container2 .logo2,
 .container2 .colom1,
 .container2 .colom2 {
@@ -272,16 +309,19 @@ nav .navlinks li a:hover {
   max-width: 420px;
   padding: 20px;
   background-color: #c0c0c0;
-  justify-items: center;
+  justify-items : center;
 }
+
 .container2 ul {
   list-style: none;
   padding: 0;
   justify-items: center;
 }
+
 .container2 ul li a {
   color: #000;
 }
+
 .container2 h4 {
   color: #fff;
   margin-bottom: 10px;
