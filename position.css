@@ -88,9 +88,13 @@ nav .togglebtn span {
 
 nav .navlinks {
   list-style-type: none;
-  background-color: #c3c5c4;
+  background-color: transparent;
   margin: 5px;
   padding: 10px;
+  position: static;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 nav .navlinks li {
